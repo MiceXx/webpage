@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Michael Xu">
+  <meta name="description" content="Michael's Career Timeline">
+  <title>Timeline</title>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="css/timeline.css">
+
+</head>
+
+<body>
+  <div ng-app="app" ng-controller="TimelineController as ctrl">
+  <div class="sq-top">
+    <h1 class="sq-title">
+      <a href="index.html" title="Back Button" class="fa fa-arrow-left backbutton"> Back</a>
+    My Career Timeline
+    <span ng-animate-swap="ctrl.total" ng-bind="ctrl.total"></span>
+  </h1>
+  </div>
+
+  <div class="sq-container">
+    <div class="sq-timeline">
+
+      <div class="sq-timeline_item" ng-repeat="item in ctrl.schedule" in-view="ctrl.itemInview($index, $inview, $inviewInfo, item)" in-view-options="{ offset: -100 }" ng-class="{ 'sq-timeline_item--animate': item.inview }">
+
+        <div class="sq-timeline_item_date">
+          <span ng-bind="item.date"></span>
+        </div>
+
+        <div class="sq-timeline_item_info" ng-class-even="'sq-timeline_item_info--left'">
+          <span class="sq-timeline_item_title">
+          <span ng-bind="item.title"></span>
+          <br>
+          </span>
+
+          <span class="sq-timeline_item_description" >
+            <span ng-bind="item.description"></span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.12.0/lodash.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/angular-inview/2.0.0/angular-inview.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-animate.js'></script>
+
+    <script  src="js/timeline.js"></script>
+
+</body>
+</html>
