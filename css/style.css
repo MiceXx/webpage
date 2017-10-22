@@ -15,6 +15,23 @@
   clear: both;
   margin-top: 10px; }
 
+.bluebutton{
+  background-color: #217DE7;
+  border-color: #217DE7;
+  color: #f0f0e6;
+}  
+
+.introbuttons {
+  font-size: 16px;
+  width: 130px;
+  min-width: 130px;
+}
+
+.about-me-button{
+  font-size: 14px;
+  width: 220px;
+}
+
 @media (min-width: 768px) {
   .pull-right-sm {
     float: right !important; }
@@ -68,13 +85,12 @@ h3{
 
 p {
   color: #f0f0e6;
-  font-size: 16pt; }
+  font-size: 16pt;
+}
 
 .smalltext {
-  font-size: 11pt; }
-
-.smallertext {
-  font-size: 8pt; }
+  font-size: 11pt;
+}
 
 .darkgrey-text{
   color:#817575;
@@ -90,13 +106,22 @@ p {
 }
 
 body > .container-fluid {
-  padding: 60px 15px 0; }
+  padding: 60px 15px 0;
+}
 
 .container-fluid .text-muted {
-  margin: 20px 0; }
+  margin: 20px 0;
+}
 
 .btn:focus, a:focus {
-  outline: none !important; }
+  outline: none !important;
+}
+
+.btn:hover{
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
 
 .navbar {
   height: 70px;
@@ -266,13 +291,6 @@ body > .container-fluid {
   border-radius: 50%;
   color: #217DE7 }
 
-
-.introbuttons {
-  background-color: #217DE7;
-  border-color: #217DE7;
-  color: #f0f0e6;
-}
-
 /*-----------------------------------------------------------------------------*/
 
 figure.intbox {
@@ -327,6 +345,15 @@ bottom: 0;
 position: absolute;
 z-index: 1;
 }
+
+.interest-desc {
+  font-size: 8pt;
+}
+
+.int-center{
+  text-align: center;
+}
+
 figure.intbox:hover figcaption,
 figure.intbox.hover figcaption {
 -webkit-transform: translateY(-50%);
