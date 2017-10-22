@@ -295,18 +295,11 @@ body > .container-fluid {
 
 figure.intbox {
 position: relative;
-overflow: hidden;
 min-width: 230px;
 left: -60px; /*center in page*/
-text-align: center;
-}
-figure.intbox * {
--webkit-box-sizing: padding-box;
-box-sizing: padding-box;
 }
 figure.intbox img {
 max-width: 50%; /*circle size*/
-vertical-align: top;
 }
 figure.intbox figcaption {
 top: 55%;
@@ -325,16 +318,14 @@ figure.intbox:after {
 position: absolute;
 content: "";
 display: auto;
-text-align: center;
 top: 0px;
 left: 56px; /*for hover box*/
-width: 51%;
-right: 0px;
 bottom: 0px;
-background-color: #1E392A;
+width: 51%;
+background-color: #1E392A; /*#1E392A*/
 -webkit-transition: all 0.4s ease-in-out;
 transition: all 0.4s ease-in-out;
--webkit-transform: rotateX(-90deg);
+-webkit-transform: rotateX(-90deg); 
 transform: rotateX(-90deg);
 }
 figure.intbox a {
@@ -348,22 +339,19 @@ z-index: 1;
 
 .interest-desc {
   font-size: 8pt;
+  width: 70%;
+  margin: -10px 0 0 29px;
 }
 
-.int-center{
-  text-align: center;
-}
-
-figure.intbox:hover figcaption,
-figure.intbox.hover figcaption {
+figure.intbox:hover figcaption {
 -webkit-transform: translateY(-50%);
 transform: translateY(-50%);
 opacity: 1;
 -webkit-transition-delay: 0.2s;
 transition-delay: 0.2s;
 }
-figure.intbox:hover:after,
-figure.intbox.hover:after {
+
+figure.intbox:hover:after{
 -webkit-transform: rotateX(0);
 transform: rotateX(0);
 opacity: 0.9;
@@ -371,8 +359,6 @@ opacity: 0.9;
 
 .intdiv{
   display: inline-block;
-  width: 10%;
-  height: 200px;
   width: 100px;
   margin: 4%;
 }

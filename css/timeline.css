@@ -1,6 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+
 body {
     background-color: #33a9d4;
     color: #297cb9;
+  }
+
+  * {
+    font-family: "Montserrat", Arial, sans-serif;
   }
   
   .sq-top {
@@ -141,6 +147,7 @@ body {
     border: transparent;
     position: fixed;
     text-decoration: none;
+    font-family: "Montserrat", Arial, sans-serif;
     text-align: left;
     left:18px;
     top: 25px;
